@@ -65,7 +65,7 @@ RUN { \
 
 
 RUN apt-get -yqq update && apt-get -yqq upgrade \
- && apt-get -yqq install build-essential clangd clang-format gfortran git libc6-dbg vim \
+ && apt-get -yqq install build-essential clangd clang-format curl gfortran git libc6-dbg vim \
  && rm -rf /var/lib/apt/lists/*
 
 RUN /opt/view/bin/python -m ensurepip && /opt/view/bin/python -m pip install autopep8 scipy numpy scipy matplotlib pandas -i https://pypi.org/simple && rm -rf /root/.cache

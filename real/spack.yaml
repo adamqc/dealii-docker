@@ -33,6 +33,7 @@ spack:
       - build-essential
       - clangd
       - clang-format
+      - curl
       - gfortran
       - git
       - libc6-dbg
