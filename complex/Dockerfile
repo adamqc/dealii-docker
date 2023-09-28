@@ -24,6 +24,8 @@ RUN mkdir /opt/spack-environment \
 &&   echo '      - x86_64' \
 &&   echo '      providers:' \
 &&   echo '        mpi: [mpich]' \
+&&   echo '    python:' \
+&&   echo '      version: [3.10.12]' \
 &&   echo '  concretizer:' \
 &&   echo '    unify: true' \
 &&   echo '  config:' \
