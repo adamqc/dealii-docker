@@ -10,7 +10,7 @@ RUN mkdir /opt/spack-environment \
 &&   echo '  - cmake' \
 &&   echo '  - dealii@master+mpi+petsc+p4est+python+trilinos~hdf5~gmsh~sundials~oce~cgal~assimp~symengine~examples~ginkgo~threads' \
 &&   echo '  - eigen' \
-&&   echo '  - python' \
+&&   echo '  - python@3.10' \
 &&   echo '  - mumps+mpi+metis+parmetis' \
 &&   echo '  - mpich datatype-engine=dataloop' \
 &&   echo '  - petsc+mumps+superlu-dist+complex~hdf5' \
@@ -24,8 +24,6 @@ RUN mkdir /opt/spack-environment \
 &&   echo '      - x86_64' \
 &&   echo '      providers:' \
 &&   echo '        mpi: [mpich]' \
-&&   echo '    python:' \
-&&   echo '      version: [3.10]' \
 &&   echo '  concretizer:' \
 &&   echo '    unify: true' \
 &&   echo '  config:' \

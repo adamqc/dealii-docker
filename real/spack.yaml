@@ -3,7 +3,7 @@ spack:
   - cmake
   - dealii@master+mpi+petsc+p4est+python+trilinos~hdf5~gmsh~sundials~oce~cgal~assimp~symengine~examples~ginkgo~threads
   - eigen
-  - python
+  - python@3.10
   - mfem@develop+mpi+petsc+suite-sparse+superlu-dist
   - mumps+mpi+metis+parmetis
   - mpich datatype-engine=dataloop
@@ -18,8 +18,6 @@ spack:
       - x86_64
       providers:
         mpi: [mpich]
-    python:
-      version: [3.10]
 
   container:
     images:
