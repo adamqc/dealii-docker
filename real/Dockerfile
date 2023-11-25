@@ -1,5 +1,5 @@
 # Build stage with Spack pre-installed and ready to be used
-FROM spack/ubuntu-jammy:latest as builder
+FROM spack/ubuntu-jammy:develop as builder
 
 
 # What we want to install and how we want to install it
