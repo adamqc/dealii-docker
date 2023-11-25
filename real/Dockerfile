@@ -8,9 +8,9 @@ RUN mkdir /opt/spack-environment \
 &&  (echo spack: \
 &&   echo '  specs:' \
 &&   echo '  - cmake' \
-&&   echo '  - dealii@master+mpi+petsc+p4est+python+trilinos~hdf5~gmsh~sundials~oce~cgal~assimp~symengine~examples~ginkgo~threads' \
+&&   echo '  - dealii@master+mpi+petsc+p4est+python+trilinos~hdf5~gmsh~sundials~oce~cgal~assimp~symengine~examples~ginkgo~threads~vtk' \
 &&   echo '  - eigen' \
-&&   echo '  - python@3.10' \
+&&   echo '  - python@3.10.13' \
 &&   echo '  - mfem@develop+mpi+petsc+suite-sparse+superlu-dist+shared~static' \
 &&   echo '  - mumps+mpi+metis+parmetis' \
 &&   echo '  - mpich datatype-engine=dataloop' \
