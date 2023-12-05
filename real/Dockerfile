@@ -68,6 +68,7 @@ RUN apt-get -yqq update && apt-get -yqq upgrade \
  && apt-get -yqq install build-essential clangd clang-format curl gfortran git libc6-dbg vim \
  && rm -rf /var/lib/apt/lists/*
 
+RUN sed -i 's|/opt/spack/lib/spack/env/gcc/||g' /opt/view/lib/cmake/deal.II/deal.IIConfig.cmake
 RUN . /opt/spack-environment/activate.sh && python -m ensurepip && python -m pip install autopep8 scipy numpy matplotlib pandas swig -i https://pypi.org/simple && python -m pip install mfem -i https://pypi.org/simple && rm -rf /root/.cache
 RUN sh -c "$(curl -L https://raw.githubusercontent.com/deluan/zsh-in-docker/master/zsh-in-docker.sh)" -- -t robbyrussell -p vi-mode
 USER root
